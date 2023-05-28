@@ -14,7 +14,7 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
       if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-        console.log('E-mail enviado com sucesso');
+        Alert('E-mail enviado com sucesso');
         // Faça aqui qualquer ação adicional após o envio do e-mail
       }
     };
